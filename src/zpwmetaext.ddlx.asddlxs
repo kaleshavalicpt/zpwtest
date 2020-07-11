@@ -1,0 +1,34 @@
+@Metadata.layer: #CUSTOMER
+@UI.headerInfo: { typeName: 'Manifest report',
+typeNamePlural: 'Manifest report',
+title.value: 'vbeln',
+title.criticality: 'tracking_number'
+}
+annotate view zpw_testpack_view
+with
+
+{
+@UI.facet: [{ id : 'zpwtestpack',
+              type: #IDENTIFICATION_REFERENCE,
+              label: 'Manifest Report'}]  
+@UI.lineItem: [{position: 10, label: 'VBELN'}] 
+@UI.identification: [{ position: 10, label: 'VBELN' }]  
+vbeln;
+ 
+@UI.lineItem: [{position: 20, label: 'PLANT'}] 
+@UI.identification: [{ position: 20, label: 'PLANT' }]
+plant;
+ 
+@UI.lineItem: [{position: 30, label: 'DATE CREATED'}] 
+@UI.identification: [{ position: 10, label: 'DATE CREATED' }]
+date_added;
+ 
+@UI.lineItem: [{position: 40, label: 'TIME CREATED'}] 
+@UI.identification: [{ position: 10, label: 'TIME CREATED' }]
+time_added;
+ 
+@UI.lineItem: [{position: 50, label: 'TRACKING NUMBER'}] 
+@UI.identification: [{ position: 10, label: 'TRACKING NUMBER' }]
+tracking_number;
+ 
+}

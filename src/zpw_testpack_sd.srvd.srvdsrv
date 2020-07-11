@@ -1,0 +1,4 @@
+@EndUserText.label: 'service definition for zpw_testpack'
+define service Zpw_testpack_SD {
+  expose zpw_testpack_view;
+}

@@ -1,0 +1,12 @@
+managed; // implementation in class zbp_pw_testpack_view unique;
+
+define behavior for zpw_testpack_view //alias <alias_name>
+persistent table ZPWMANIFEST
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}
